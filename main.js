@@ -1,6 +1,8 @@
-import './style.css'
+import "./style.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+const tl = gsap.timeline({ scrollTrigger: ".sodas", delay: 0.2 });
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+tl.from(".parent", { opacity: 0, duration: 0.5 });
+tl.from("#swoosh", { opacity: 0, duration: 0.5, ease: "ease-out" });

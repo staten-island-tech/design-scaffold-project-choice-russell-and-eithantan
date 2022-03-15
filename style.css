@@ -1,3 +1,17 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+:root {
+  --primary: #c20000
+  --accent: rgb(175, 175, 175);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -79,3 +93,9 @@ body {
 .sodas {
   height: 125rem;
 }
+
+#circles:hover {
+  transform: scaleX(1.5) scaleY(1.5) scaleZ(1.5);
+  transition: 0.5s ease-in-out;
+}
+

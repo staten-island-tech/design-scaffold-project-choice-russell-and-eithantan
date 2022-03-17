@@ -90,6 +90,7 @@ body {
   clip-path: circle(50% at 50% 50%);
   background-color: rgb(189, 189, 189);
   border: none;
+  
 }
 .sodas {
   height: 125rem;
@@ -101,6 +102,11 @@ body {
 }
 #circles{
   transition: 0.6s;
+  
 }
 
+#circles:focus{
+  transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+  box-shadow: 10000px 10000px 10000px 10000px coral
+}
 

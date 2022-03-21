@@ -5,9 +5,25 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
+}
+
+body {
   background-color: #c20000;
 }
+
+#cocoa {
+}
+#man {
+}
+#bubbles {
+}
+#longWave {
+}
+#swirlWave {
+}
+#swooshWave {
+}
 #bottle {
-  width: 100%;
+  width: 20%;
   height: auto;
 }

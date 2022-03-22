@@ -56,6 +56,12 @@ body {
 .div2 {
   grid-area: 3 / 2 / 4 / 3;
 }
+
+.sodaBtn {
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  width: 100%;
+}
+
 .div3 {
   grid-area: 3 / 4 / 4 / 5;
 }
@@ -88,8 +94,10 @@ body {
 }
 .button {
   clip-path: circle(50% at 50% 50%);
-  background-color: rgb(189, 189, 189);
   border: none;
+  background: linear-gradient(225deg, #cacaca, #f0f0f0);
+  box-shadow:  -20px 20px 60px #bebebe,
+               20px -20px 60px #ffffff;
   
 }
 .sodas {

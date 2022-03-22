@@ -6,7 +6,14 @@ body,
   box-sizing: border-box;
   font-size: 10px;
 }
+@font-face {
+  font-family: 'loki_colaregular';
+  src: url('lokicola-webfont.woff2') format('woff2'),
+       url('lokicola-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
+}
 :root {
   --primary: #c20000
   --accent: rgb(175, 175, 175);
@@ -107,6 +114,11 @@ body {
 
 #circles:focus{
   transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-  box-shadow: 10000px 10000px 10000px 10000px coral
+  box-shadow: 50px -16px rgb(253, 253, 253)
 }
 
+.div1 p{
+  font-size: 50px;
+  text-align: center;
+  font-family: 'loki_colaregular';
+}

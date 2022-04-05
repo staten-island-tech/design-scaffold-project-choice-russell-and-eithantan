@@ -25,19 +25,19 @@ gsap.utils.toArray("h1").forEach((h1) => {
   h1.addEventListener("mouseleave", () => hover.reverse());
 });
 
-gsap.fromTo("#circles", 0.2, {
-  colorMatrixFilter: { brightness: 30, contrast: 1.5, colorize: 0x90e600 },
-  glowFilter: {
-    blurX: 12,
-    blurY: 12,
-    color: 0x90e600,
-    strength: 1.3,
-    alpha: 1,
-  },
-});
+// gsap.fromTo("#circles", 0.2, {
+//   colorMatrixFilter: { brightness: 30, contrast: 1.5, colorize: 0x90e600 },
+//   glowFilter: {
+//     blurX: 12,
+//     blurY: 12,
+//     color: 0x90e600,
+//     strength: 1.3,
+//     alpha: 1,
+//   },
+// });
 
-gsap.fromTo("#circles feGaussianBlur", 1, {
-  attr: { stdDeviation: 0 },
-  repeat: -1,
-  yoyo: true,
-});
+// gsap.fromTo("#circles feGaussianBlur", 1, {
+//   attr: { stdDeviation: 0 },
+//   repeat: -1,
+//   yoyo: true,
+// });

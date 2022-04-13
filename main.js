@@ -1,20 +1,4 @@
 import "./style.css";
-
-const DOMSelectors = {
-cocoa: document.getElementsByClassId("btn1"),
-foontis: document.getElementsByClassId("btn2"),
-Root: document.getElementsByClassId("btn3"),
-dew: document.getElementsByClassId("btn4"),
-watah: document.getElementsByClassId("btn5"),
-drSalt: document.getElementsByClassId("btn6"),
-pepes: document.getElementsByClassId("btn7"),
-up: document.getElementsByClassId("btn8"),
-spritz: document.getElementsByClassId("btn9"),
-pink: document.getElementsByClassId("btn10"),
-submit: document.getElementsByClassId("btn11"),
-
-};
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -57,32 +41,3 @@ gsap.fromTo("#circles feGaussianBlur", 1, {
   repeat: -1,
   yoyo: true,
 });
-
-
-let storedSoda = "";
-
-
-document.querySelectorAll(".button").forEach((btn) => {
-  btn.addEventListener("click", function (event) {
-    if (event.target.id != "btn11") {
-      storedSoda = event.target.id; 
-    }
-  }
-  )});
-
-  DOMSelectors.submit.addEventListener("click", )
-
-
-
-
-
-
-
-
-event.addEventListener // button --> store 
-
-
-
-event.addEventListener // fetch id of stored --> submit
-
-

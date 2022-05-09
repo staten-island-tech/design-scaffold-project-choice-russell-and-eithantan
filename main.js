@@ -41,3 +41,78 @@ gsap.utils.toArray("h1").forEach((h1) => {
 //   repeat: -1,
 //   yoyo: true,
 // });
+
+const DOMSelectors = {
+  cokeButton: document.querySelector(".div2"),
+  fantaButton: document.querySelector(".div3"),
+  rootButton: document.querySelector(".div4"),
+  dewButton: document.querySelector(".div5"),
+  watahButton: document.querySelector(".div6"),
+  saltButton: document.querySelector(".div7"),
+  pepesButton: document.querySelector(".div8"),
+  upButton: document.querySelector(".div9"),
+  spritzButton: document.querySelector(".div10"),
+  pinkButton: document.querySelector(".div11"),
+  dispenseButton: document.querySelector(".div12"),
+};
+
+const links = {
+  coke: "./html/cocoa.html",
+  fanta: "https://www.coca-cola.com/",
+  root: "https://www.coca-cola.com/",
+  dew: "https://www.coca-cola.com/",
+  watah: "https://www.coca-cola.com/",
+  salt: "https://www.coca-cola.com/",
+  pepes: "https://www.coca-cola.com/",
+  up: "https://www.coca-cola.com/",
+  spritz: "https://www.coca-cola.com/",
+  pink: "https://www.coca-cola.com/",
+  dispense: "https://www.coca-cola.com/",
+};
+let link = null;
+function selLink(soda) {
+  link = links[soda];
+}
+DOMSelectors.cokeButton.addEventListener("click", () => {
+  selLink("coke");
+  console.log(link);
+});
+DOMSelectors.fantaButton.addEventListener("click", () => {
+  selLink("fanta");
+  console.log(link);
+});
+DOMSelectors.rootButton.addEventListener("click", () => {
+  selLink("root");
+  console.log(link);
+});
+DOMSelectors.dewButton.addEventListener("click", () => {
+  selLink("dew");
+  console.log(link);
+});
+DOMSelectors.watahButton.addEventListener("click", () => {
+  selLink("watah");
+  console.log(link);
+});
+DOMSelectors.saltButton.addEventListener("click", () => {
+  selLink("salt");
+  console.log(link);
+});
+DOMSelectors.pepesButton.addEventListener("click", () => {
+  selLink("pepes");
+  console.log(link);
+});
+DOMSelectors.upButton.addEventListener("click", () => {
+  selLink("up");
+  console.log(link);
+});
+DOMSelectors.spritzButton.addEventListener("click", () => {
+  selLink("spritz");
+  console.log(link);
+});
+DOMSelectors.pinkButton.addEventListener("click", () => {
+  selLink("pink");
+  console.log(link);
+});
+DOMSelectors.dispenseButton.addEventListener("click", () => {
+  window.open(link, "_self");
+});

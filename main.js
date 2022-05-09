@@ -1,18 +1,16 @@
 import "./style.css";
-
 const DOMSelectors = {
-cocoa: document.getElementsByClassId("btn1"),
-foontis: document.getElementsByClassId("btn2"),
-Root: document.getElementsByClassId("btn3"),
-dew: document.getElementsByClassId("btn4"),
-watah: document.getElementsByClassId("btn5"),
-drSalt: document.getElementsByClassId("btn6"),
-pepes: document.getElementsByClassId("btn7"),
-up: document.getElementsByClassId("btn8"),
-spritz: document.getElementsByClassId("btn9"),
-pink: document.getElementsByClassId("btn10"),
-submit: document.getElementsByClassId("btn11"),
-
+  cokeButton: document.querySelector(".div2"),
+  fantaButton: document.querySelector(".div3"),
+  rootButton: document.querySelector(".div4"),
+  dewButton: document.querySelector(".div5"),
+  watahButton: document.querySelector(".div6"),
+  saltButton: document.querySelector(".div7"),
+  pepesButton: document.querySelector(".div8"),
+  upButton: document.querySelector(".div9"),
+  spritzButton: document.querySelector(".div10"),
+  pinkButton: document.querySelector(".div11"),
+  dispenseButton: document.querySelector(".div12"),
 };
 
 import { gsap } from "gsap";
@@ -58,19 +56,7 @@ gsap.utils.toArray("h1").forEach((h1) => {
 //   yoyo: true,
 // });
 
-const DOMSelectors = {
-  cokeButton: document.querySelector(".div2"),
-  fantaButton: document.querySelector(".div3"),
-  rootButton: document.querySelector(".div4"),
-  dewButton: document.querySelector(".div5"),
-  watahButton: document.querySelector(".div6"),
-  saltButton: document.querySelector(".div7"),
-  pepesButton: document.querySelector(".div8"),
-  upButton: document.querySelector(".div9"),
-  spritzButton: document.querySelector(".div10"),
-  pinkButton: document.querySelector(".div11"),
-  dispenseButton: document.querySelector(".div12"),
-};
+
 
 const links = {
   coke: "./html/cocoa.html",

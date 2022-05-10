@@ -66,7 +66,7 @@ const links = {
   watah: "https://www.coca-cola.com/",
   salt: "https://www.coca-cola.com/",
   pepes: "https://www.coca-cola.com/",
-  up: "https://www.coca-cola.com/",
+  up: "./html/8up.html",
   spritz: "https://www.coca-cola.com/",
   pink: "https://www.coca-cola.com/",
   dispense: "https://www.coca-cola.com/",

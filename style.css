@@ -148,3 +148,47 @@ body {
   font-family: 'loki_colaregular';
   transition: .6s;
 }
+
+
+#sodaPop{
+  position: absolute;
+  width: 200vw;
+  height: 200vh;
+background-color: brown;
+clip-path: polygon(0% 11%, 3% 9%, 7% 9%, 10% 11%, 14% 13%, 17% 14%, 21% 13%, 25% 12%, 28% 10%, 32% 9%, 36% 10%, 40% 10%, 43% 12%, 46% 14%, 50% 14%, 53% 13%, 57% 10%, 60% 9%, 64% 10%, 67% 12%, 72% 11%, 75% 9%, 80% 8%, 83% 9%, 87% 11%, 90% 13%, 95% 14%, 98% 11%, 100% 10%, 100% 100%, 0 100%);
+  animation: sodaFill 7s;
+  animation-fill-mode: both;
+}
+
+@keyframes sodaFill {
+from {
+ top: 100vh; 
+ left: -50vw;
+}
+to{top: -100vh;
+left: 0vw}
+}
+
+#bubbles {
+ height: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+ overflow: hidden;
+}
+.bubble {
+  align-self: flex-end;
+  width: 10rem;
+  height: 10rem;
+  clip-path: circle(50% at 50% 50%);
+  background-color: white;
+}
+
+@keyframes bubbleRise {
+  from {
+    transform: translateY(100%) translateX(-30vw);
+  }
+  to {
+    transform: translateY(calc(-100vw+100%)) translateX(0vw)
+  }
+}

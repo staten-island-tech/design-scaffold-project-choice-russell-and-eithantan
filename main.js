@@ -63,7 +63,7 @@ const links = {
   fanta: "https://www.coca-cola.com/",
   root: "https://www.coca-cola.com/",
   dew: "https://www.coca-cola.com/",
-  watah: "https://www.coca-cola.com/",
+  watah: "./html/watah.html",
   salt: "https://www.coca-cola.com/",
   pepes: "https://www.coca-cola.com/",
   up: "./html/8up.html",

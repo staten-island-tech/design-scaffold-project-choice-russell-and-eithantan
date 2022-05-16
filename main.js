@@ -75,6 +75,7 @@ let link = null;
 function selLink(soda) {
   link = links[soda];
 }
+
 DOMSelectors.cokeButton.addEventListener("click", () => {
   selLink("coke");
   console.log(link);
@@ -117,4 +118,8 @@ DOMSelectors.pinkButton.addEventListener("click", () => {
 });
 DOMSelectors.dispenseButton.addEventListener("click", () => {
   window.open(link, "_self");
+  // SODA FILL
 });
+
+
+DOMSelectors.sodaFill.style.animation = "sodaFillClose .5s";

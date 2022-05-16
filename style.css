@@ -157,18 +157,30 @@ body {
   height: 200vh;
 background-color: brown;
 clip-path: polygon(0% 11%, 3% 9%, 7% 9%, 10% 11%, 14% 13%, 17% 14%, 21% 13%, 25% 12%, 28% 10%, 32% 9%, 36% 10%, 40% 10%, 43% 12%, 46% 14%, 50% 14%, 53% 13%, 57% 10%, 60% 9%, 64% 10%, 67% 12%, 72% 11%, 75% 9%, 80% 8%, 83% 9%, 87% 11%, 90% 13%, 95% 14%, 98% 11%, 100% 10%, 100% 100%, 0 100%);
-  animation: sodaFill 7s;
+  animation: sodaFill 5s;
   animation-fill-mode: both;
   overflow: hidden;
 }
 
 @keyframes sodaFill {
-from {
+0% {
  top: 100vh; 
  left: -50vw;
 }
-to{top: -100vh;
-left: 0vw}
+70%{
+  top: -100vh;
+left: 0vw;
+}
+75%{
+  top: -100vh;
+left: 0vw;
+opacity: 100%;
+}
+100%{
+  top: -100vh;
+left: 0vw;
+opacity: 0%;
+}
 }
 
 #bubbles {
@@ -193,112 +205,121 @@ background-color: transparent;
   background-color: white;
   animation: bubbleRise 4s linear infinite;
   border: none;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 2;
+  animation-fill-mode: both;
 }
 
 .bubble:nth-child(2){
   height: 12rem;
   width: 12rem;
-
-  animation-duration: 3s;
+  animation-duration: 1.5s;
 filter: blur(3px) opacity(80%);
 }
 .bubble:nth-child(3){
   height: 9rem;
   width: 9rem;
-
-  animation-duration: 7s;
+  animation-duration: 3.5s;
 filter: blur(1px) opacity(80%);
 }
 .bubble:nth-child(4){
   height: 13rem;
   width: 13rem;
-
-  animation-duration: 5s;
+  animation-duration: 2.5s;
 filter: blur(2px) opacity(80%);
 }
 .bubble:nth-child(5){
   height: 7rem;
   width: 7rem;
-
-  animation-duration: 4s;
+  animation-duration: 2.1s;
 filter: blur(3px);
 }
 .bubble:nth-child(6){
   height: 9rem;
   width: 9rem;
-
-  animation-duration: 8s;
+  animation-duration: 3.8s;
 filter: blur(0px) opacity(80%);
 }
 .bubble:nth-child(7){
   height: 11rem;
   width: 11rem;
-
-  animation-duration: 4s;
+  animation-duration: 2.2s;
 filter: blur(0px) opacity(100%);
 }
 .bubble:nth-child(8){
   height: 10rem;
   width: 10rem;
-  animation-duration: 6s;
+  animation-duration: 3.2s;
 filter: blur(2px) opacity(90%);
 
 }
 .bubble:nth-child(9){
   height: 10rem;
   width: 10rem;
-  animation-duration: 3.5s;
+  animation-duration: 1.7s;
 filter: blur(3px) opacity(90%);
 }
 .bubble:nth-child(10){
   height: 9rem;
   width: 9rem;
-  animation-duration: 7s;
+  animation-duration: 3.4s;
 filter: blur(1px) opacity(80%);
 }
 .bubble:nth-child(11){
   height: 12rem;
   width: 12rem;
-  animation-duration: 5.2s;
+  animation-duration: 2.6s;
 filter: blur(2px) opacity(90%);
 }
 .bubble:nth-child(12){
   height: 7rem;
   width: 7rem;
-
-  animation-duration: 4s;
+  animation-duration: 1.9s;
 filter: blur(3px);
 }
 .bubble:nth-child(13){
   height: 9rem;
   width: 9rem;
-
-  animation-duration: 8s;
+  animation-duration: 4s;
 filter: blur(0px) opacity(100%);
 }
 .bubble:nth-child(14){
   height: 11rem;
   width: 11rem;
-
-  animation-duration: 4s;
+  animation-duration: 2.3s;
 filter: blur(0px) opacity(80%);
 }
 .bubble:nth-child(15){
   height: 10rem;
   width: 10rem;
-  animation-duration: 6s;
+  animation-duration: 3s;
 filter: blur(2px) opacity(90%);
 }
-
-
-
-
+.bubble:nth-child(16){
+  height: 8rem;
+  width: 8rem;
+  animation-duration: 3s;
+filter: blur(0px) opacity(100%);
+}
+.bubble:nth-child(17){
+  height: 7rem;
+  width: 7rem;
+  animation-duration: 1.3s;
+filter: blur(0px) opacity(80%);
+}
+.bubble:nth-child(18){
+  height: 9rem;
+  width: 9rem;
+  animation-duration: 1.5s;
+filter: blur(2px) opacity(90%);
+}
 
 
 @keyframes bubbleRise {
   from {
     background-color: white;
     transform: translateY(150%) translateX(-30vh);
+    
   }
   to {
     background-color: white;

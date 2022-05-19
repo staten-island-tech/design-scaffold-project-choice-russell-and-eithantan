@@ -118,8 +118,7 @@ DOMSelectors.pinkButton.addEventListener("click", () => {
 });
 DOMSelectors.dispenseButton.addEventListener("click", () => {
   window.open(link, "_self");
-  // SODA FILL
+  DOMSelectors.sodaFill.style.animation = "sodaFill .5s";
 });
 
 
-DOMSelectors.sodaFill.style.animation = "sodaFillClose .5s";

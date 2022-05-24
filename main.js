@@ -1,4 +1,18 @@
 import "./style.css";
+const DOMSelectors = {
+  cokeButton: document.querySelector(".div2"),
+  fantaButton: document.querySelector(".div3"),
+  rootButton: document.querySelector(".div4"),
+  dewButton: document.querySelector(".div5"),
+  watahButton: document.querySelector(".div6"),
+  saltButton: document.querySelector(".div7"),
+  pepesButton: document.querySelector(".div8"),
+  upButton: document.querySelector(".div9"),
+  spritzButton: document.querySelector(".div10"),
+  pinkButton: document.querySelector(".div11"),
+  dispenseButton: document.querySelector(".div12"),
+};
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -25,16 +39,16 @@ gsap.utils.toArray("h1").forEach((h1) => {
   h1.addEventListener("mouseleave", () => hover.reverse());
 });
 
-// gsap.fromTo("#circles", 0.2, {
-//   colorMatrixFilter: { brightness: 30, contrast: 1.5, colorize: 0x90e600 },
-//   glowFilter: {
-//     blurX: 12,
-//     blurY: 12,
-//     color: 0x90e600,
-//     strength: 1.3,
-//     alpha: 1,
-//   },
-// });
+gsap.fromTo("#circles", 0.2, {
+  colorMatrixFilter: { brightness: 30, contrast: 1.5, colorize: 0x90e600 },
+  glowFilter: {
+    blurX: 12,
+    blurY: 12,
+    color: 0x90e600,
+    strength: 1.3,
+    alpha: 1,
+  },
+});
 
 // gsap.fromTo("#circles feGaussianBlur", 1, {
 //   attr: { stdDeviation: 0 },
@@ -42,29 +56,15 @@ gsap.utils.toArray("h1").forEach((h1) => {
 //   yoyo: true,
 // });
 
-const DOMSelectors = {
-  cokeButton: document.querySelector(".div2"),
-  fantaButton: document.querySelector(".div3"),
-  rootButton: document.querySelector(".div4"),
-  dewButton: document.querySelector(".div5"),
-  watahButton: document.querySelector(".div6"),
-  saltButton: document.querySelector(".div7"),
-  pepesButton: document.querySelector(".div8"),
-  upButton: document.querySelector(".div9"),
-  spritzButton: document.querySelector(".div10"),
-  pinkButton: document.querySelector(".div11"),
-  dispenseButton: document.querySelector(".div12"),
-};
-
 const links = {
   coke: "./html/cocoa.html",
   fanta: "https://www.coca-cola.com/",
   root: "https://www.coca-cola.com/",
   dew: "https://www.coca-cola.com/",
-  watah: "https://www.coca-cola.com/",
+  watah: "./html/watah.html",
   salt: "https://www.coca-cola.com/",
   pepes: "https://www.coca-cola.com/",
-  up: "https://www.coca-cola.com/",
+  up: "./html/8up.html",
   spritz: "https://www.coca-cola.com/",
   pink: "https://www.coca-cola.com/",
   dispense: "https://www.coca-cola.com/",
@@ -73,6 +73,7 @@ let link = null;
 function selLink(soda) {
   link = links[soda];
 }
+
 DOMSelectors.cokeButton.addEventListener("click", () => {
   selLink("coke");
   console.log(link);
@@ -115,4 +116,5 @@ DOMSelectors.pinkButton.addEventListener("click", () => {
 });
 DOMSelectors.dispenseButton.addEventListener("click", () => {
   window.open(link, "_self");
+  DOMSelectors.sodaFill.style.animation = "sodaFill .5s";
 });

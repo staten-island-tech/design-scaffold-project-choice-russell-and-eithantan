@@ -11,6 +11,8 @@ const DOMSelectors = {
   spritzButton: document.querySelector(".div10"),
   pinkButton: document.querySelector(".div11"),
   dispenseButton: document.querySelector(".div12"),
+  sodaPop: document.getElementById("sodaPop"),
+  bubbles: document.querySelectorAll("bubble")
 };
 
 import { gsap } from "gsap";
@@ -60,15 +62,15 @@ gsap.utils.toArray("h1").forEach((h1) => {
 
 const links = {
   coke: "./html/cocoa.html",
-  fanta: "https://www.coca-cola.com/",
-  root: "https://www.coca-cola.com/",
-  dew: "https://www.coca-cola.com/",
+  fanta: "./html/foontis.html",
+  root: "./html/root.html",
+  dew: "./html/dew.html",
   watah: "./html/watah.html",
-  salt: "https://www.coca-cola.com/",
-  pepes: "https://www.coca-cola.com/",
+  salt: "./html/drsalt.html",
+  pepes: "./html/pepes.html",
   up: "./html/8up.html",
-  spritz: "https://www.coca-cola.com/",
-  pink: "https://www.coca-cola.com/",
+  spritz: "./html/spritz.html",
+  pink: "./html/pink.html",
   dispense: "https://www.coca-cola.com/",
 };
 let link = null;
@@ -118,7 +120,8 @@ DOMSelectors.pinkButton.addEventListener("click", () => {
 });
 DOMSelectors.dispenseButton.addEventListener("click", () => {
   window.open(link, "_self");
-  DOMSelectors.sodaFill.style.animation = "sodaFill .5s";
-});
+  DOMSelectors.sodaPop.style.animation = "";
+  DOMSelectors.sodaPop.style.animation = "sodaFill 5s";
+})
 
 

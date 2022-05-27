@@ -157,9 +157,11 @@ body {
   height: 200vh;
 background-color: brown;
 clip-path: polygon(0% 11%, 3% 9%, 7% 9%, 10% 11%, 14% 13%, 17% 14%, 21% 13%, 25% 12%, 28% 10%, 32% 9%, 36% 10%, 40% 10%, 43% 12%, 46% 14%, 50% 14%, 53% 13%, 57% 10%, 60% 9%, 64% 10%, 67% 12%, 72% 11%, 75% 9%, 80% 8%, 83% 9%, 87% 11%, 90% 13%, 95% 14%, 98% 11%, 100% 10%, 100% 100%, 0 100%);
-  animation: sodaFill 5s;
   animation-fill-mode: both;
+  animation-iteration-count: 1 ;
   overflow: hidden;
+  top: 100vh; 
+  left: -50vw;
 }
 
 @keyframes sodaFill {
@@ -205,7 +207,7 @@ background-color: transparent;
   height: 10rem;
   clip-path: circle(50% at 50% 50%);
   background-color: white;
-  animation: bubbleRise 4s linear infinite;
+  animation: bubbleRise 4s linear;
   border: none;
   animation-timing-function: ease-in;
   animation-iteration-count: 2;

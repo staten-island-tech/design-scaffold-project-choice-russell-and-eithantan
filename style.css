@@ -8,8 +8,8 @@ body,
 }
 @font-face {
   font-family: 'loki_colaregular';
-  src: url('lokicola-webfont.woff2') format('woff2'),
-       url('lokicola-webfont.woff') format('woff');
+  src: url('/lokicola-webfont.woff2') format('woff2'),
+       url('/lokicola-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 

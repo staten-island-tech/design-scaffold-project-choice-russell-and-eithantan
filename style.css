@@ -122,17 +122,14 @@ body {
   
 }
 #circles{
-  transition: 0.6s;
-  
+  transition: 0.6s;  
 }
-
-
 .button:focus{
   border: solid;
   border-color: rgb(255, 255, 255);
   border-width: 0.2rem;
   box-shadow: 0px 0px 12px rgb(253, 253, 253);
-
+}
 #circles:focus{
 
   transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);

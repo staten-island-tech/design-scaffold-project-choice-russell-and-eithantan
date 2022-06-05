@@ -1,3 +1,4 @@
+
 html,
 body,
 * {
@@ -15,8 +16,19 @@ body,
 
 }
 :root {
-  --primary: #c20000
+  --primary: #c20000;
   --accent: rgb(175, 175, 175);
+  --up: limegreen;
+  --cocoa: brown;
+  --dew: limegreen;
+  --drsalt: brown;
+  --foontis: orange;
+  --pepes: brown;
+  --pink: rgb(238, 127, 145);
+  --root: brown;
+  --spritz: lightgray;
+  --watah: blue; 
+  --bacco: black; 
 }
 
 #app {
@@ -57,6 +69,7 @@ body {
 }
 
 .div1 {
+  margin-top: 7rem;
   grid-area: 1 / 3 / 2 / 6;
   background-color: rgb(175, 175, 175);
   border-radius: 5rem;
@@ -155,7 +168,7 @@ body {
   position: absolute;
   width: 200vw;
   height: 200vh;
-background-color: brown;
+background-color: var(--bacco);
 clip-path: polygon(0% 11%, 3% 9%, 7% 9%, 10% 11%, 14% 13%, 17% 14%, 21% 13%, 25% 12%, 28% 10%, 32% 9%, 36% 10%, 40% 10%, 43% 12%, 46% 14%, 50% 14%, 53% 13%, 57% 10%, 60% 9%, 64% 10%, 67% 12%, 72% 11%, 75% 9%, 80% 8%, 83% 9%, 87% 11%, 90% 13%, 95% 14%, 98% 11%, 100% 10%, 100% 100%, 0 100%);
   animation-fill-mode: both;
   animation-iteration-count: 1 ;
@@ -207,10 +220,10 @@ background-color: transparent;
   height: 10rem;
   clip-path: circle(50% at 50% 50%);
   background-color: white;
-  animation: bubbleRise 4s linear;
   border: none;
+  animation: bubbleRise 4s linear;
   animation-timing-function: ease-in;
-  animation-iteration-count: 2;
+  animation-iteration-count: 100;
   animation-fill-mode: both;
 }
 
@@ -320,14 +333,81 @@ filter: blur(2px) opacity(90%);
 
 
 @keyframes bubbleRise {
-  from {
+  0% {
     background-color: white;
     transform: translateY(150%) translateX(-30vh);
     
   }
-  to {
+  100% {
     background-color: white;
     transform: translateY(-100vh) translateX(0);
   }
 }
 
+.back {
+  width: 100vw;
+  height: auto;
+}
+
+.sodaBuffer {
+width: 100vw;
+height: 100vh;
+position: absolute;
+left: 0; right: 0; top: 0; bottom: 0;
+margin: auto; 
+z-index: 10;
+animation-delay: 2s;
+animation: sodaOnLoad 2s;
+animation-fill-mode: both;
+animation-iteration-count: 1;
+}
+
+#SBup {
+  background-color: var(--up);
+}
+
+#SBcocoa {
+  background-color: var(--cocoa);
+}
+
+#SBdew {
+  background-color: var(--dew);
+}
+
+#SBdrsalt {
+  background-color: var(--drsalt);
+}
+
+#SBfoontis {
+  background-color: var(--foontis);
+}
+
+#SBpepes {
+  background-color: var(--pepes);
+}
+
+#SBpink {
+  background-color: var(--pink);
+}
+
+#SBroot {
+  background-color: var(--root);
+}
+
+#SBspritz {
+  background-color: var(--spritz);
+}
+
+#SBwatah {
+  background-color: var(--watah);
+}
+
+
+@keyframes sodaOnLoad {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}

@@ -11,6 +11,7 @@ const DOMSelectors = {
   spritzButton: document.querySelector(".div10"),
   pinkButton: document.querySelector(".div11"),
   dispenseButton: document.querySelector(".div12"),
+  sodaPop: document.getElementById("sodaPop"),
 };
 
 import { gsap } from "gsap";
@@ -60,15 +61,15 @@ gsap.utils.toArray("h1").forEach((h1) => {
 
 const links = {
   coke: "./html/cocoa.html",
-  fanta: "https://www.coca-cola.com/",
-  root: "https://www.coca-cola.com/",
-  dew: "https://www.coca-cola.com/",
+  fanta: "./html/foontis.html",
+  root: "./html/root.html",
+  dew: "./html/dew.html",
   watah: "./html/watah.html",
-  salt: "https://www.coca-cola.com/",
-  pepes: "https://www.coca-cola.com/",
+  salt: "./html/drsalt.html",
+  pepes: "./html/pepes.html",
   up: "./html/8up.html",
-  spritz: "https://www.coca-cola.com/",
-  pink: "https://www.coca-cola.com/",
+  spritz: "./html/spritz.html",
+  pink: "./html/pink.html",
   dispense: "https://www.coca-cola.com/",
 };
 let link = null;
@@ -79,46 +80,70 @@ function selLink(soda) {
 DOMSelectors.cokeButton.addEventListener("click", () => {
   selLink("coke");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--cocoa)");
+
 });
 DOMSelectors.fantaButton.addEventListener("click", () => {
   selLink("fanta");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--foontis)");
 });
 DOMSelectors.rootButton.addEventListener("click", () => {
   selLink("root");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--root)");
+
 });
 DOMSelectors.dewButton.addEventListener("click", () => {
   selLink("dew");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--dew)");
+
 });
 DOMSelectors.watahButton.addEventListener("click", () => {
   selLink("watah");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--watah)");
+
 });
 DOMSelectors.saltButton.addEventListener("click", () => {
   selLink("salt");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--drsalt)");
+
 });
 DOMSelectors.pepesButton.addEventListener("click", () => {
   selLink("pepes");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--pepes)");
+
 });
 DOMSelectors.upButton.addEventListener("click", () => {
   selLink("up");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--up)");
+
 });
 DOMSelectors.spritzButton.addEventListener("click", () => {
   selLink("spritz");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--spritz)");
+
 });
 DOMSelectors.pinkButton.addEventListener("click", () => {
   selLink("pink");
   console.log(link);
+  document.body.style.setProperty("--bacco", "var(--pink)");
+
 });
 DOMSelectors.dispenseButton.addEventListener("click", () => {
-  window.open(link, "_self");
-  DOMSelectors.sodaFill.style.animation = "sodaFill .5s";
-});
+  DOMSelectors.sodaPop.style.animation = "";
+  DOMSelectors.sodaPop.style.animation = "sodaFill 5s";
+  console.log("dispenseButton")
+  setTimeout(() => {
+    window.open(link, "_self");
+  }, 3000);
+
+})
 
 

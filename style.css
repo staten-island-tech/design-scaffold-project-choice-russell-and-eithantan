@@ -178,6 +178,7 @@ body {
 
 
 #sodaPop{
+  pointer-events: none;
   position: absolute;
   width: 200vw;
   height: 200vh;

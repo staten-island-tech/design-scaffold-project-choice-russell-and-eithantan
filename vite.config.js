@@ -21,7 +21,6 @@ module.exports = defineConfig({
                 nested12: resolve(__dirname, "./html/watah.html"),
 
 
-                // nested2: resolve(__dirname, "./html/practice.html"),
             }
         }
     }
